@@ -1,0 +1,29 @@
+.product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    }
+    
+    .search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    }
+    
+    input, select {
+    margin-right: 10px;
+    padding: 10px;
+    }
+    
+    .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
+    .product {
+    width: 20%;
+    margin: 10px;
+    text-align: center;
+    }
+    

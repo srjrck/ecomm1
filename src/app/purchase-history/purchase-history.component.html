@@ -1,0 +1,24 @@
+<div class="purchase-history-container">
+    <h1>Purchase History</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Order Number</th>
+          <th>Order Date</th>
+          <th>Total Amount</th>
+          <th>Payment Method</th>
+          <th>Order Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let purchase of purchases">
+          <td>{{purchase.orderNumber}}</td>
+          <td>{{purchase.orderDate}}</td>
+          <td>{{purchase.totalAmount}}</td>
+          <td>{{purchase.paymentMethod}}</td>
+          <td>{{purchase.orderStatus}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

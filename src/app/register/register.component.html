@@ -1,0 +1,29 @@
+<div class="register-container">
+    <h1>Register</h1>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': registerForm?.get('email')?.touched && registerForm?.get('email')?.invalid }">
+          <div class="invalid-feedback" *ngIf="registerForm?.get('email')?.touched && registerForm?.get('email')?.invalid">
+            Please enter a valid email
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': registerForm?.get('password')?.touched && registerForm?.get('password')?.invalid }">
+          <div class="invalid-feedback" *ngIf="registerForm?.get('password')?.touched && registerForm?.get('password')?.invalid">
+            Please enter a password
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" formControlName="confirmPassword" class="form-control" [ngClass]="{ 'is-invalid': registerForm?.get('confirmPassword')?.touched && registerForm?.get('confirmPassword')?.invalid }">
+          <div class="invalid-feedback" *ngIf="registerForm?.get('confirmPassword')?.touched && registerForm?.get('confirmPassword')?.invalid">
+            Please confirm your password
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+      </form>
+      
+  </div>
+  

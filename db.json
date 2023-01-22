@@ -1,0 +1,61 @@
+{
+  "users": [
+  {
+  "id": 1,
+  "email": "user1@example.com",
+  "password": "password1"
+  },
+  {
+  "id": 2,
+  "email": "user2@example.com",
+  "password": "password2"
+  }
+  ],
+  "products": [
+  {
+  "id": 1,
+  "name": "Product 1",
+  "price": 50
+  },
+  {
+  "id": 2,
+  "name": "Product 2",
+  "price": 100
+  },
+  {
+  "id": 3,
+  "name": "Product 3",
+  "price": 150
+  }
+  ],
+  "cart": [
+  {
+  "id": 1,
+  "productId": 1,
+  "quantity": 2
+  },
+  {
+  "id": 2,
+  "productId": 2,
+  "quantity": 1
+  }
+  ],
+  "purchase-history": [
+  {
+  "id": 1,
+  "orderNumber": "12345",
+  "orderDate": "2022-01-01",
+  "totalAmount": 150,
+  "paymentMethod": "Credit Card",
+  "orderStatus": "Completed"
+  },
+  {
+  "id": 2,
+  "orderNumber": "67890",
+  "orderDate": "2022-02-01",
+  "totalAmount": 200,
+  "paymentMethod": "Paypal",
+  "orderStatus": "Completed"
+  }
+  ]
+  }

@@ -1,0 +1,16 @@
+<div class="product-container">
+    <h1>Products</h1>
+    <div class="search-container">
+      <input [(ngModel)]="searchTerm" (keyup)="search()" placeholder="Search products">
+      <select [(ngModel)]="sortBy" (change)="sort()">
+        <option value="name">Sort by name</option>
+        <option value="price">Sort by price</option>
+      </select>
+    </div>
+    <div class="product-list">
+      <div *ngFor="let product of products" class="product">
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.price }}</p>
+      </div>
+    </div>
+  </div>
